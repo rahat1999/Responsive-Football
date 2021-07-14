@@ -1,0 +1,331 @@
+/*----------------------------------
+    Reusable Component
+    ------------------------------ */
+body{
+    font-family: 'Poppins', sans-serif;
+   
+}
+.player-title{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+/* --------------------
+       Header
+-------------------------------*/
+header{
+    background-color: #2D25A0;
+    margin-bottom: 70px;
+    
+}
+.main-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 65px 100px; 
+}
+.header-title h2{
+    line-height: 80px;
+    font-size: 64px;
+    color: #FFFF;
+    font-weight: 700;
+}
+.header-title a{
+    text-decoration:none ;
+    color: #FFF;
+    font-size: 16px;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    transition: 1s;
+}
+.header-title a:hover{
+    background-color: #8d1c46;
+}
+.fa-arrow-right{
+    margin-left: 10px;
+
+}
+.header-banner img{
+    Width: 556.01px;
+    Height: 438px; 
+}
+
+/* ----------------------
+    Main Section 
+-----------------------*/
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width:1050px;
+}
+.top-players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:27px 30px ;
+    margin-bottom: 40px;
+   
+}
+.players{
+    cursor:pointer;
+    background: #FFF;
+    box-shadow:0 0 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    transition: transform 1s ease;
+}
+.players:hover{
+    transform: scale(1.06);
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+.player-name h3{
+    font-size: 28px;
+   color: #18191F;
+   line-height: 40px;
+}
+
+
+/*--------------------
+    Footbal-Skills
+-------------------------*/
+
+.football-skills{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    padding: 20px 80px;
+    align-content: space-around;
+    justify-content: center;
+}
+.skill-title{
+    font-size: 28px;
+    color: #18191F;
+    line-height: 40px;
+}
+
+/*-------------------------------
+     footer 
+--------------------------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo img{
+    width: 483.87px;
+    height: 110px;
+    margin:  20px  0px;
+}
+
+.icone a{
+    font-size: 25px;
+    margin-right: 14px;
+    width: 32px;
+    height: 32px;
+    padding:9px 16px;
+    border-radius: 30px;
+    color: gray;
+    background-color: lightgray;
+    
+}
+.icone a i{
+    transition: 1s;
+}
+.icone a i:hover{
+       transform: rotate(360deg);
+}
+.copy-right{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/*----------- Responsive Area------------- */
+/* for mobile */
+
+@media only screen and (max-width:480px) {
+    /* header section */
+    header{
+        width: 360px;
+        height: 695px;
+    }
+   
+    .main-header{
+        flex-direction: column;
+        padding:0px;
+    }
+    .header-title h2{
+        margin-bottom:  30px 0px;
+        font-size: 36px;
+        Line-height: 50px
+    }
+    .header-banner img{
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+    }
+    /*------------------------ 
+        Main section
+      ---------------------*/
+    .container{
+        width: 330px;
+       
+    }
+    .top-players{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .players{
+        padding: 0px;
+    }
+    .player img{
+       
+        width: 100%;
+        height: 100%;
+    }
+    /* section football-skills  */
+
+    .football-skills{
+        grid-template-columns: repeat(1,1fr);
+        padding: 10px;
+    }
+    iframe{
+        
+        width: 350px;
+        height: 250px;
+    }
+
+    /*------footer------------- */
+
+    .logo img{
+        width:320px;
+    }
+}
+/*--------------- tablet----------------------- */
+@media only screen and (min-width:481px) and (max-Width:768px) {
+  /* --------------------
+    header
+  --------------- */
+  header{
+    width: 750px;
+    height: 1095px;
+}
+
+.main-header{
+    flex-direction: column;
+    padding:10px;
+}
+.header-title h2{
+    margin-bottom:  40px 0px;
+    font-size: 50px;
+    padding: 20px;
+    
+}
+.header-banner img{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 530px;
+}
+.top-players{
+   
+    grid-template-columns: repeat(1,1fr);
+}
+.players{
+    padding: 10px;
+}
+.player img{
+   
+    width: 100%;
+    height: 100%;
+}
+/* section football-skills  */
+
+.football-skills{
+    grid-template-columns: repeat(1,1fr);
+    padding: 10px 30px;
+}
+iframe{
+    width: 700px;
+    height: 400px;
+}
+
+/*------footer------------- */
+
+.logo img{
+    width: 400px;
+}
+
+}
+/* ---------------
+      ipade-pro  /laptop 
+---------------*/
+@media only screen and (min-width:769px) and (max-Width:1279px) {
+    /* --------------------
+      header
+    --------------- */
+    header{
+      width: 1000px;
+      height: 1350px;
+  }
+  
+  .main-header{
+      flex-direction: column;
+      padding:20px;
+  }
+  .header-title h2{
+      margin-bottom:  40px 0px;
+      font-size: 60px;
+      padding: 20px;
+      
+  }
+  .header-banner img{
+      margin-top: 70px;
+      width: 100%;
+      height: 100%;
+  }
+  .container{
+      width: 790px;
+  }
+  .top-players{
+      grid-template-columns: repeat(2,1fr);
+  }
+  .players{
+      padding: 10px;
+  }
+  .player img{
+     
+      width: 100%;
+      height: 100%;
+  }
+  /* section football-skills  */
+  
+  .football-skills{
+      grid-template-columns: repeat(1,1fr);
+      padding: 10px 80px;
+  }
+  iframe{
+      width: 900px;
+      height: 400px;
+  }
+  
+  /*------footer------------- */
+  
+  .logo img{
+      width: 100%;
+  }
+  
+  }
+  
+  
+    
+
+
+
